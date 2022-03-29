@@ -83,7 +83,7 @@ public class PriorityQueueList<T extends Comparable<T>> {
     public String toString() {
         ListNode value = head;
         StringBuilder stringBuilder = new StringBuilder();
-        while (value.next != null) {
+        while (value != null) {
             stringBuilder.append(value.value).append(" ");
             value = value.next;
         }
